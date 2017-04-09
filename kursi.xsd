@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="supply">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="barang"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="barang">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="jenis"/>
+                <xs:element ref="jumlah"/>
+                <xs:element ref="harga"/>
+                <xs:element ref="suplier"/>
+                <xs:element ref="gudang"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="jenis" type="xs:string"/>
+    <xs:element name="jumlah" type="xs:integer"/>
+    <xs:element name="harga" type="xs:integer"/>
+    <xs:element name="suplier">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="pt"/>
+                <xs:element ref="kode"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="pt" type="xs:NCName"/>
+    <xs:element name="kode" type="xs:integer"/>
+    <xs:element name="gudang">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="etalase"/>
+                <xs:element ref="nomor"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="etalase" type="xs:NCName"/>
+    <xs:attribute name="etalase" type="xs:string"/>
+    <xs:element name="nomor" type="xs:integer"/>
+</xs:schema>

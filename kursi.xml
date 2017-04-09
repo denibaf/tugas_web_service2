@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<supply xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="kursi.xsd">
+    <barang>
+        <jenis>kayu jati</jenis>
+        <jumlah>120</jumlah>
+        <harga>45000</harga>
+        <suplier>
+            <pt>jaticom</pt>
+            <kode>101</kode>
+        </suplier>
+        <gudang>
+            <etalase>k1</etalase>
+            <nomor>1011</nomor>
+        </gudang>
+    </barang>
+    <barang>
+        <jenis>cat kayu</jenis>
+        <jumlah>30</jumlah>
+        <harga>25000</harga>
+        <suplier>
+            <pt>avitex</pt>
+            <kode>201</kode>
+        </suplier>
+        <gudang>
+            <etalase>c2</etalase>
+            <nomor>2013</nomor>
+        </gudang>
+    </barang>
+</supply>
